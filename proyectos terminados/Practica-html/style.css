@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+}
+.container {
+    background-color: blue;
+    display: flex;
+}
+
+.item{
+    background-color: red;
+    width: 150px;
+    height: 100px;
+}

@@ -1,0 +1,20 @@
+{
+    "datos":[
+        {
+            "nombre": "maria",
+        "edad": "27"
+    },
+        {
+            "nombre": "triana",
+            "edad": "27"
+        }
+
+        {
+            "noombre": "Eliana",
+            "edad": "35"
+        }
+
+    ],
+}
+
+("nombre":"Triana", "edad: 27", "animales-favoritos":["gatos", "pandas"])

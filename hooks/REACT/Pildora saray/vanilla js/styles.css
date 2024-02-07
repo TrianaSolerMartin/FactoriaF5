@@ -1,0 +1,19 @@
+body {
+    background: yellow;
+    display: flex; 
+    justify-items: center;   
+}
+
+button {
+    background: rgb(35, 141, 212);
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex; 
+    justify-items: center;   
+}
+
+.centrado-botones {
+    
+}

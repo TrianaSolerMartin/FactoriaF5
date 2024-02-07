@@ -1,0 +1,19 @@
+{
+    "datos":[
+        {
+            "nombre": "maria",
+        "edad": "27"
+    },
+        {
+            "nombre": "triana",
+            "edad": "27"
+        },
+
+        {
+            "noombre": "Eliana",
+            "edad": "35"
+        }
+
+    ]
+}
+

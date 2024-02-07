@@ -1,0 +1,10 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Minerva",
+      "edad": "37",
+      "email": "minerva@gmail.com",
+      "id": "ccc0"
+    }
+  ]
+}

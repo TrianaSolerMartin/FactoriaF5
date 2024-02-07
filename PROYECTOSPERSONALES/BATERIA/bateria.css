@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evitar que el contenido sobresalga de la pantalla */
+}
+
+.bateria {
+    height: 100vh; /* Ajustar la altura al tamaño de la pantalla */
+    display: flex;
+}
+
+.platillo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: radial-gradient(circle at 50% 0, #ffd700, #d4a100);
+}
+
+.platillo1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: radial-gradient(circle at 50% 0, #ffd700, #d4a100);   
+}
+
+.platillo:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón sobre el platillo */
+}
+
+/* Estilo de la animación al hacer clic */
+@keyframes clic {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animacion-clic {
+    animation: clic 0.3s ease-out;
+}
+

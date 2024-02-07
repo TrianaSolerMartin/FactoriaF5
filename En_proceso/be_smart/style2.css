@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0; 
+}
+
+.team {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    margin: 0;
+}
+
+.member {
+    flex: 0 0 auto;
+    flex-basis: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.member header h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.member .flex {
+    display: flex;
+}
+
+.member .flex figure {
+    margin: 0;
+}
+
+.member .details {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.profession h2 {
+    text-align: center;
+}
+
+.description p {
+    text-align: justify;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Añade estilos adicionales según tus preferencias */

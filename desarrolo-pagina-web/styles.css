@@ -1,0 +1,62 @@
+body {
+  background-color: silver;
+}
+
+header {
+  background-color: brown;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  background-color: lightcyan;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: khaki;
+  border-style: dotted;
+}
+
+nav li a:hover {
+  color: red;
+}
+
+article h2 {
+    background-color: lightyellow;
+}
+
+article p {
+    background-color: pink;
+}
+
+.first-letter {
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    background-color: brown;
+    color:white;
+    text-align:center;
+    width:60%;
+    border-radius:25px;
+    margin:auto; 
+}
