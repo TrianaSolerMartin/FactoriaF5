@@ -1,0 +1,122 @@
+Práctica Material UI
+
+------- INSTALACIÓN MATERIAL UI -------
+
+1. Nuevo proyecto react e instalación con vite:
+
+npm create vite@latest .  (espacio . para que se haga en el mismo directorio)
+npm i
+
+2. Instalar Material UI siguiendo las instrucciones de la web
+https://mui.com/material-ui/
+
+- Por defecto:
+
+npm install @mui/material @emotion/react @emotion/styled
+
+- Fuente Roboto:
+
+npm install @fontsource/roboto
+
+Añadir en la main.jsx encima de import './index.css' 
+por si queremos cambios globales:
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+- Iconos:
+
+npm install @mui/icons-material
+
+- About the Lab (contiene componentes que están de prueba 
+para que se nos actualicen rápido en el corto plazo como el loading button): 
+
+npm install @mui/lab 
+
+------- AÑADIMOS UN COMPONENTE -------
+
+3. Eliminamos 'app.css' y vaciamos el 'app.jsx'
+
+4. (Extra) Instalar la extensión de vscode VS 
+'Code ES7+ React/Redux/React-Native/JS snippets' 
+que permite crear porciones de código de forma 
+más rapida a traves de algunas abreviaciones.
+
+5. Export for default de una función con el shortcut: ednf
+que nos retorne un fragment con un <h1></h1>
+
+export default function App() {
+	return (
+	    <>
+	    <h1>App</h1>
+	    </>
+	);
+}
+
+6. npm run dev 
+
+7. Llamamos a un componente que se llama <Button>Mi primer botón</Button>
+
+8. Importamos el componente: seleccionamos 'button' control + espacio
+O sino la escribimos manualmente para que carge más rápido ya que es más recomendable: 
+
+	import Button from "@mui/material/Button"; 
+
+9. A través de props como <h1 variant="contained"> cambia de apariencia.
+
+10. Para visualizar la fuente Roboto y espacios base. 
+Añadimos el componente <CssBaseline/> en la main.jsx
+para todos los estilos bases debajo de <Recat.StrictMode>
+y la importamos con control + espacio.
+
+------- PERSONALIZAR LA API -------
+
+10. Añadimos un <Container></Container> y lo importamos. Ancho automático.
+
+import { Button, Container } from "@mui/material";
+
+
+export default function App(){
+    return (
+        <Container> 
+        <h1>App</h1>
+        <Button variant="contained" >Mi primer botón</Button>
+        </Container>
+    );
+}
+
+11. Añadimos el prop de ancho máximo al Container con maxWidth="xs" .
+Default breakpoints : https://mui.com/material-ui/customization/breakpoints/
+
+12. Propiedad sx y le mandamos un objeto para ponerle casi cualquier propiedad de css:
+
+sx={{border: 2}}
+
+para que funcione un string hay que añadir un borderStyle 
+
+sx={{border: "5rem", borderStyle: "solid" }}
+
+RECORDATORIO: Usar CammelCase borderStyle no border-style como en css.
+
+sx={{border: 2, boxShadow: 3, pb: 2 }}
+
+------- AÑADIR UN ICONO -------
+
+13. Vamos a la página de iconos: https://mui.com/material-ui/material-icons/
+
+- Seleccionammos e importamos:
+
+import AdbIcon from '@mui/icons-material/Adb';
+
+-Y usamos el prop correspondiente como alinearlo al final:
+
+endIcon={<AdbIcon />}
+
+
+
+
+
+
+
