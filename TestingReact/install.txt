@@ -43,3 +43,7 @@ npm install -D @testing-library/react
 
 npm install -D @testing-library/react
 (npm install --save-dev @testing-library/react)
+
+//informacion
+
+https://testing-library.com/docs/react-testing-library/intro/

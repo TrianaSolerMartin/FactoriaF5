@@ -1,6 +1,6 @@
 //las funciones de tst se componende dos parametros el nombre del tst y el codigo de mi test
 
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 import { expect } from "vitest";
 
@@ -12,5 +12,14 @@ test("render App", () => {
 //declaramos una constante de lo que queremos testear (screen busca dentro de pantalla) // /count is/i -> medinte esto no discrimina entre mayuscuas y minusculas //
     const countElement = screen.getByText(/count is/i)
     expect(countElement).toBeDefined();
+})
+
+test("should rise when button pressed", () => {
+    render(<App/>)
+
+    const countElement = screen.getByText(/count is/i)
+    fireEvent.click(countElement)
+    const increaseNumber = screen.getByText(/1/i)
+    expect(increaseNumber).toBeDefined();
 })
 
