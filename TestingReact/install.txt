@@ -1,0 +1,45 @@
+// instalar react 
+
+npm create vite@latest .
+
+(instalación haitual de entorno react)
+
+// instalar vitest
+
+npm install -D vitest
+
+// añadir script para run test vite (package.json)
+
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+
+//modifica el archivo vite.config.js
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true, 
+    environment: 'jsdom',
+  }
+})
+
+//instalar json dom
+
+npm install -D jsdom 
+
+//instalamos librerias que nos permite testear codigo antiguo y librery n
+
+npm install -D @testing-library/react
+(npm install --save-dev @testing-library/react)
+
+npm install -D @testing-library/react
+(npm install --save-dev @testing-library/react)
